@@ -3,7 +3,7 @@
 
 **A Graduate Course Project for "Intelligent Software Engineering" at UCAS**
 
-This project implements a **Deep Fossil Hierarchical Vision Transformer (DFH-ViT)** for classifying microscopic fossil foraminifera. It was developed as part of the **Intelligent Software Engineering** graduate course at the University of Chinese Academy of Sciences (UCAS), taught by **Professor Tiejian Luo**[citation:6][citation:9].
+This project implements a **Deep Fossil Hierarchical Vision Transformer (DFH-ViT)** for classifying microscopic fossil foraminifera. It was developed as part of the **Intelligent Software Engineering** graduate course at the University of Chinese Academy of Sciences (UCAS), taught by **Professor Tiejian Luo**.
 
 ## 📋 Project Overview & Context
 
@@ -13,10 +13,9 @@ The **DFH-ViT** model combines hierarchical classification, synthetic data gener
 
 ## 👨‍🏫 Instructor Information
 *   **Course Instructor**: Professor **Tiejian Luo**
-*   **Affiliation**: School of Information Science and Engineering, University of Chinese Academy of Sciences (UCAS)[citation:9].
+*   **Affiliation**: School of Information Science and Engineering, University of Chinese Academy of Sciences (UCAS).
 *   **Email**: `tjluo@gucas.ac.cn`
-[citation:6].
-
+    
 ## 🧠 Technical Foundation: Vision Transformer (ViT)
 
 This project is built upon the **Vision Transformer (ViT)** architecture, a groundbreaking approach that adapts the Transformer model—originally successful in Natural Language Processing (NLP)—for computer vision tasks[citation:2][citation:8].
