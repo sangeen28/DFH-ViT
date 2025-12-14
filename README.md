@@ -7,7 +7,7 @@ This project implements a **Deep Fossil Hierarchical Vision Transformer (DFH-ViT
 
 ## 📋 Project Overview & Context
 
-The "Intelligent Software Engineering" course at UCAS focuses on new challenges in software engineering and the development of new technologies to address them, including software design, architecture, and quality[citation:6]. This project directly applies course principles to design an intelligent system for a scientific domain problem.
+The "Intelligent Software Engineering" course at UCAS focuses on new challenges in software engineering and the development of new technologies to address them, including software design, architecture, and quality. This project directly applies course principles to design an intelligent system for a scientific domain problem.
 
 The **DFH-ViT** model combines hierarchical classification, synthetic data generation, and active learning to address key challenges in paleontological research: **limited labeled data**, **hierarchical taxonomy**, and the need for **efficient expert annotation**.
 
@@ -18,14 +18,14 @@ The **DFH-ViT** model combines hierarchical classification, synthetic data gener
     
 ## 🧠 Technical Foundation: Vision Transformer (ViT)
 
-This project is built upon the **Vision Transformer (ViT)** architecture, a groundbreaking approach that adapts the Transformer model—originally successful in Natural Language Processing (NLP)—for computer vision tasks[citation:2][citation:8].
+This project is built upon the **Vision Transformer (ViT)** architecture, a groundbreaking approach that adapts the Transformer model—originally successful in Natural Language Processing (NLP)—for computer vision tasks.
 
 **Key ViT Concepts Used in This Project:**
 
-1.  **Image Patching**: An input image is split into fixed-size patches (e.g., 16x16 pixels), which are treated as a sequence of "visual tokens," similar to words in a sentence[citation:8].
-2.  **Patch Embedding & Positional Encoding**: Each patch is flattened and projected into a vector (embedding). Learnable positional encodings are added to retain spatial information[citation:8].
-3.  **Transformer Encoder**: The sequence of patch embeddings is processed by a standard Transformer encoder stack, which uses **Multi-Head Self-Attention** to model relationships between all patches globally[citation:8].
-4.  **Classification Head**: A special `[CLS]` token gathers global information, and its final state is fed into a Multi-Layer Perceptron (MLP) for classification[citation:8].
+1.  **Image Patching**: An input image is split into fixed-size patches (e.g., 16x16 pixels), which are treated as a sequence of "visual tokens," similar to words in a sentence.
+2.  **Patch Embedding & Positional Encoding**: Each patch is flattened and projected into a vector (embedding). Learnable positional encodings are added to retain spatial information.
+3.  **Transformer Encoder**: The sequence of patch embeddings is processed by a standard Transformer encoder stack, which uses **Multi-Head Self-Attention** to model relationships between all patches globally.
+4.  **Classification Head**: A special `[CLS]` token gathers global information, and its final state is fed into a Multi-Layer Perceptron (MLP) for classification.
 
 **Why ViT?**
 Compared to traditional Convolutional Neural Networks (CNNs), ViTs excel at capturing **long-range dependencies** across an entire image due to their global attention mechanism[citation:8]. While often data-hungry, they are highly flexible and scalable, making them suitable for complex tasks like hierarchical fossil classification when combined with strategies like synthetic data and transfer learning[citation:8].
