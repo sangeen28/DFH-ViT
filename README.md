@@ -84,7 +84,7 @@ ACTIVE_TOP_K = 200        # Number of samples to select via active learning
 
 ## 🔬 Connection to Related Research & Project Advancement
 
-This project is directly inspired by, and builds upon, recent groundbreaking work at the intersection of paleontology and deep learning, specifically the study **"Classifying microfossil radiolarians on fractal pre-trained vision transformers"** (Mimura et al., 2025).
+This project is directly inspired by, and builds upon, recent groundbreaking work at the intersection of paleontology and deep learning, specifically the study **"Classifying microfossil radiolarians on fractal pre-trained vision transformers"** (Mimura et al., 2025) [Mimura et al., "Classifying microfossil radiolarians on fractal pre-trained vision transformers"](https://www.nature.com/articles/s41598-025-90988-z), *Scientific Reports*, 2025.
 
 While Mimura et al. demonstrated the powerful potential of **Vision Transformers (ViT)** and **Formula-Driven Supervised Learning (FDSL)** for microfossil classification, achieving significant gains over traditional CNNs, their approach has several key limitations. Our **DFH-ViT model is explicitly designed to overcome these challenges**:
 
