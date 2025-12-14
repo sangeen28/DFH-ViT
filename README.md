@@ -65,7 +65,7 @@ The project is contained within a single, comprehensive Python file for ease of 
 
 ### **Key Configuration (`CFG` Class)**
 Hyperparameters are centralized in the `CFG` class. Key settings include:
-```python
+
 BATCH_SIZE = 64
 IMAGE_SIZE = 224
 EPOCHS_PRETRAIN = 10      # Pretraining on synthetic data
@@ -76,3 +76,24 @@ LAMBDA_FINE_CE = 1.0      # Weight for fine-level classification loss
 LAMBDA_METRIC = 0.1       # Weight for contrastive loss
 MC_DROPOUT_SAMPLES = 8    # Samples for Monte Carlo uncertainty estimation
 ACTIVE_TOP_K = 200        # Number of samples to select via active learning
+
+
+
+
+# Connection to Related Research & Project Advancement
+
+This project is directly inspired by, and builds upon, recent groundbreaking work at the intersection of paleontology and deep learning, specifically the study _"Classifying microfossil radiolarians on fractal pre-trained vision transformers"_ (Mimura et al., 2025).
+
+While Mimura et al. demonstrated the powerful potential of Vision Transformers (ViT) and Formula-Driven Supervised Learning (FDSL) for microfossil classification, achieving significant gains over traditional CNNs, their approach has several key limitations. Our DFH-ViT model is explicitly designed to overcome these challenges:
+
+## Limitations in Mimura et al. (2025) & How DFH-ViT Addresses Them
+
+| **Limitation in Mimura et al. (2025)** | **How DFH-ViT Addresses This Limitation** |
+|----------------------------------------|-------------------------------------------|
+| **1. Flat Classification Structure**  | The model treats all 32 classes as peers in a single, flat classification task. This does not reflect the real-world biological hierarchy (e.g., Order → Family → Genus → Species). | ✅ **Hierarchical Classification Design**<br>DFH-ViT introduces an explicit two-level hierarchy (coarse_label and fine_label). The model first predicts a coarse morphological group, then uses that contextual information to make a finer-grained species prediction. This mirrors expert taxonomic logic and can improve accuracy. |
+| **2. Passive Learning on Fixed Data** | The study uses a static, pre-collected dataset. It identifies that rare or ambiguous classes perform poorly but offers no active strategy to improve them beyond collecting "a larger amount of training data." | ✅ **Integrated Active Learning Pipeline**<br>DFH-ViT incorporates a Monte Carlo Dropout-based active learning module. It automatically identifies the most uncertain samples from large, unlabeled core datasets. This allows experts to strategically label only the most informative data, drastically improving model performance for difficult classes with optimal annotation effort. |
+| **3. Limited Synthetic Data Strategy** | The FDSL pre-training uses general fractal (ExFractal) or contour (RCDB) images. While effective, these are not domain-specific; they are generic mathematical patterns not designed to mimic microfossil morphology. | ✅ **Domain-Aware Synthetic Pre-training**<br>Our SyntheticFossilFractalDataset generates images that specifically mimic foraminiferal morphology (e.g., spumellarian-like radial spines, nassellarian-like conical structures). This provides more relevant inductive biases for the downstream task. |
+| **4. Single-Task Learning Objective** | The model is optimized solely for classification accuracy using a cross-entropy loss. | ✅ **Multi-Task & Contrastive Learning**<br>DFH-ViT uses a multi-task pretraining objective combining classification, image reconstruction, and rotation prediction. During fine-tuning, it adds a supervised contrastive loss. This forces the model to learn more robust, generalizable feature representations where specimens of the same species are embedded closer together. |
+
+In summary, your DFH-ViT project moves beyond simply applying a Vision Transformer to microfossils. It introduces a more biologically informed architecture, a smarter data strategy using active learning, and a richer training paradigm with multi-task and contrastive losses. This represents a holistic engineering approach to building a more capable, efficient, and scalable intelligent system for paleontological analysis—a core goal of the Intelligent Software Engineering course.
+
