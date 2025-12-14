@@ -12,7 +12,7 @@ The "Intelligent Software Engineering" course at UCAS focuses on new challenges 
 The **DFH-ViT** model combines hierarchical classification, synthetic data generation, and active learning to address key challenges in paleontological research: **limited labeled data**, **hierarchical taxonomy**, and the need for **efficient expert annotation**.
 
 ## 👨‍🏫 Instructor Information
-*   **Course Instructor**: Professor **Tiejian Luo**
+*   **Course Instructor**: Professor **Tiejian Luo** [(https://people.ucas.ac.cn/~tjluo?language=en)]
 *   **Affiliation**: School of Information Science and Engineering, University of Chinese Academy of Sciences (UCAS).
 *   **Email**: `tjluo@gucas.ac.cn`
     
