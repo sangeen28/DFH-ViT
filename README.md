@@ -1,9 +1,9 @@
 
-# DFH-ViT: Deep Fossil Hierarchical Vision Transformer
+# DFH-ViT: Domain Fossil Hierarchical Vision Transformer
 
 **A Graduate Course Project for "Intelligent Software Engineering" at UCAS**
 
-This project implements a **Deep Fossil Hierarchical Vision Transformer (DFH-ViT)** for classifying microscopic fossil foraminifera. It was developed as part of the **Intelligent Software Engineering** graduate course at the University of Chinese Academy of Sciences (UCAS), taught by **Professor Tiejian Luo**.
+This project implements a **Domain Fossil Hierarchical Vision Transformer (DFH-ViT)** for classifying microscopic fossil foraminifera. It was developed as part of the **Intelligent Software Engineering** graduate course at the University of Chinese Academy of Sciences (UCAS), taught by **Professor Tiejian Luo**.
 
 ## 📋 Project Overview & Context
 
