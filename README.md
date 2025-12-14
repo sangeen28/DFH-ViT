@@ -40,7 +40,7 @@ Compared to traditional Convolutional Neural Networks (CNNs), ViTs excel at capt
 
 ## 📊 Datasets
 
-The code automatically downloads and processes three foraminifera image datasets from Zenodo:
+The code automatically downloads and processes three foraminifera image datasets from Zenodo: [(https://zenodo.org/records/3996436)]
 1.  **Endless Forams Training Set**: Primary labeled dataset for fine-tuning and evaluation.
 2.  **MD022508 & MD972138 Training Sets**: Unlabeled core data used as the pool for active learning.
 
