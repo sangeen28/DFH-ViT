@@ -28,7 +28,7 @@ This project is built upon the **Vision Transformer (ViT)** architecture, a grou
 4.  **Classification Head**: A special `[CLS]` token gathers global information, and its final state is fed into a Multi-Layer Perceptron (MLP) for classification.
 
 **Why ViT?**
-Compared to traditional Convolutional Neural Networks (CNNs), ViTs excel at capturing **long-range dependencies** across an entire image due to their global attention mechanism[citation:8]. While often data-hungry, they are highly flexible and scalable, making them suitable for complex tasks like hierarchical fossil classification when combined with strategies like synthetic data and transfer learning[citation:8].
+Compared to traditional Convolutional Neural Networks (CNNs), ViTs excel at capturing **long-range dependencies** across an entire image due to their global attention mechanism[citation:8]. While often data-hungry, they are highly flexible and scalable, making them suitable for complex tasks like hierarchical fossil classification when combined with strategies like synthetic data and transfer learning.
 
 ## 🚀 Key Features of DFH-ViT
 
@@ -49,7 +49,7 @@ The code automatically downloads and processes three foraminifera image datasets
 The project is contained within a single, comprehensive Python file for ease of execution in environments like Google Colab.
 
 ### **Primary File**
-- `dfh_vit_foraminifera.py`: The complete implementation, including configuration (`CFG` class), model definition (`DFHViT`), datasets, training loops, evaluation, and visualization.
+- `DFH_ViT.ipynb`: The complete implementation, including configuration (`CFG` class), model definition (`DFHViT`), datasets, training loops, evaluation, and visualization.
 
 ### **Quick Start**
 1.  **Upload to Colab**: Upload the `.py` file to a Google Colab notebook.
